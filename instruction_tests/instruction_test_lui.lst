@@ -1,0 +1,87 @@
+GAS LISTING instruction_test_lui.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# Test positive value
+  12 0004 3C080001 		lui		$t0, 0x0001
+  13 0008 3C030001 		TEST_EXPECT	$t0, 0x00010000
+  13      20630000 
+  13      15030017 
+  13      00000000 
+  14              	
+  15              		# Test positive value
+  16 0018 3C095A6B 		lui		$t1, 0x5A6B
+  17 001c 3C035A6B 		TEST_EXPECT	$t1, 0x5A6B0000
+  17      20630000 
+  17      15230012 
+  17      00000000 
+  18              	
+  19              		# Test negative value
+  20 002c 3C0AA5B6 		lui		$t2, 0xA5B6
+  21 0030 3C03A5B6 		TEST_EXPECT	$t2, 0xA5B60000
+  21      20630000 
+  21      1543000D 
+  21      00000000 
+  22              	
+GAS LISTING instruction_test_lui.s 			page 2
+
+
+  23              		# Test value overwrites previous content
+  24 0040 3C0CAAAA 		lui		$t4, 0xAAAA
+  25 0044 218C5555 		addi            $t4, $t4, 0x5555
+  26 0048 3C03AAAA 		TEST_EXPECT	$t4, 0xAAAA5555
+  26      20635555 
+  26      15830007 
+  26      00000000 
+  27 0058 3C0C0000 		lui		$t4, 0x0000
+  28 005c 3C030000 		TEST_EXPECT	$t4, 0x00000000
+  28      20630000 
+  28      15830002 
+  28      00000000 
+  29              	
+  30 006c 20020001 		TEST_END
+  30      00000008 
+  30      00000000 
+GAS LISTING instruction_test_lui.s 			page 3
+
+
+DEFINED SYMBOLS
+instruction_test_lui.s:7      .text:0000000000000000 __start
+instruction_test_lui.s:30     .text:0000000000000070 _test_finish
+
+NO UNDEFINED SYMBOLS

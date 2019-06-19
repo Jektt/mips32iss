@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in cache_test_*.sh; do
+  echo "**** Regressing ${i%.sh} *****"
+  ./$i | diff -iw - ${i%.sh}${MIPSIM_FLAGS// /}.log
+done
+

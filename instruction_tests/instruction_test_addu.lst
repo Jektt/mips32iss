@@ -1,0 +1,156 @@
+GAS LISTING instruction_test_addu.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# Test positive/zero value
+  12 0004 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  13 0008 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  14 000c 01004821 		addu		$t1, $t0, $zero
+  15 0010 3C035A5A 		TEST_EXPECT	$t1, 0x5A5A5A5A
+  15      20635A5A 
+  15      15230048 
+  15      00000000 
+  16              	
+  17              		# Test positive/positive value, no overflow
+  18 0020 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  19 0024 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  20 0028 3C090000 		lui		$t1, %hi(16)
+  21 002c 21290010 		addi		$t1, $t1, %lo(16)
+  22 0030 01095021 		addu		$t2, $t0, $t1
+  23 0034 3C035A5A 		TEST_EXPECT	$t2, 0x5A5A5A6A
+  23      20635A6A 
+  23      1543003F 
+  23      00000000 
+  24              	
+  25              		# Test positive/negative value
+GAS LISTING instruction_test_addu.s 			page 2
+
+
+  26 0044 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  27 0048 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  28 004c 3C090000 		lui		$t1, %hi(-16)
+  29 0050 2129FFF0 		addi		$t1, $t1, %lo(-16)
+  30 0054 01095021 		addu		$t2, $t0, $t1
+  31 0058 3C035A5A 		TEST_EXPECT	$t2, 0x5A5A5A4A
+  31      20635A4A 
+  31      15430036 
+  31      00000000 
+  32              	
+  33              		# Test positive/positive value, overflow
+  34 0068 3C088000 		lui		$t0, %hi(0x7FFFFFFF)
+  35 006c 2108FFFF 		addi		$t0, $t0, %lo(0x7FFFFFFF)
+  36 0070 3C090000 		lui		$t1, %hi(16)
+  37 0074 21290010 		addi		$t1, $t1, %lo(16)
+  38 0078 01095021 		addu		$t2, $t0, $t1
+  39 007c 3C038000 		TEST_EXPECT	$t2, 0x8000000F
+  39      2063000F 
+  39      1543002D 
+  39      00000000 
+  40              	
+  41              		# ################################################################
+  42              	
+  43              		# Test negative/zero value
+  44 008c 3C08A5A6 		lui		$t0, %hi(0xA5A5A5A5)
+  45 0090 2108A5A5 		addi		$t0, $t0, %lo(0xA5A5A5A5)
+  46 0094 01005021 		addu		$t2, $t0, $zero
+  47 0098 3C03A5A6 		TEST_EXPECT	$t2, 0xA5A5A5A5
+  47      2063A5A5 
+  47      15430026 
+  47      00000000 
+  48              	
+  49              		# Test negative/positive value
+  50 00a8 3C08A5A6 		lui		$t0, %hi(0xA5A5A5A5)
+  51 00ac 2108A5A5 		addi		$t0, $t0, %lo(0xA5A5A5A5)
+  52 00b0 3C090000 		lui		$t1, %hi(16)
+  53 00b4 21290010 		addi		$t1, $t1, %lo(16)
+  54 00b8 01095021 		addu		$t2, $t0, $t1
+  55 00bc 3C03A5A6 		TEST_EXPECT	$t2, 0xA5A5A5B5
+  55      2063A5B5 
+  55      1543001D 
+  55      00000000 
+  56              		
+  57              		# Test negative/negative value, no overflow
+  58 00cc 3C08A5A6 		lui		$t0, %hi(0xA5A5A5A5)
+  59 00d0 2108A5A5 		addi		$t0, $t0, %lo(0xA5A5A5A5)
+  60 00d4 3C090000 		lui		$t1, %hi(-16)
+  61 00d8 2129FFF0 		addi		$t1, $t1, %lo(-16)
+  62 00dc 01095021 		addu		$t2, $t0, $t1
+  63 00e0 3C03A5A6 		TEST_EXPECT	$t2, 0xA5A5A595
+  63      2063A595 
+  63      15430014 
+  63      00000000 
+  64              	
+  65              		# Test negative/negative value, overflow
+  66 00f0 3C088000 		lui		$t0, %hi(0x8000000F)
+  67 00f4 2108000F 		addi		$t0, $t0, %lo(0x8000000F)
+GAS LISTING instruction_test_addu.s 			page 3
+
+
+  68 00f8 3C090000 		lui		$t1, %hi(-16)
+  69 00fc 2129FFF0 		addi		$t1, $t1, %lo(-16)
+  70 0100 01095021 		addu		$t2, $t0, $t1
+  71 0104 3C038000 		TEST_EXPECT	$t2, 0x7FFFFFFF
+  71      2063FFFF 
+  71      1543000B 
+  71      00000000 
+  72              	
+  73              		# ################################################################
+  74              	
+  75              		# Test with $zero as destination
+  76 0114 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  77 0118 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  78 011c 3C090000 		lui		$t1, %hi(16)
+  79 0120 21290010 		addi		$t1, $t1, %lo(16)
+  80 0124 01090021 		addu		$zero, $t0, $t1
+  81 0128 3C030000 		TEST_EXPECT	$zero, 0x00000000
+  81      20630000 
+  81      14030002 
+  81      00000000 
+  82              		
+  83              	
+  84 0138 20020001 		TEST_END
+  84      00000008 
+  84      00000000 
+GAS LISTING instruction_test_addu.s 			page 4
+
+
+DEFINED SYMBOLS
+instruction_test_addu.s:7      .text:0000000000000000 __start
+instruction_test_addu.s:84     .text:000000000000013c _test_finish
+
+NO UNDEFINED SYMBOLS

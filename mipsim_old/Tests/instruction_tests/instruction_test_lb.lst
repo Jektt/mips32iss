@@ -1,0 +1,199 @@
+GAS LISTING instruction_test_lb.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# Load positive value, zero offset, base word aligned
+  12              	
+  13 0004 3C080000 		lui		$t0, %hi(pos+8)
+  14 0008 21080008 		addi		$t0, $t0, %lo(pos+8)
+  15 000c 81090000 		lb		$t1, 0($t0)
+  16 0010 3C030000 		TEST_EXPECT	$t1, 0x00000038
+  16      20630038 
+  16      1523004F 
+  16      00000000 
+  17              	
+  18              		# Load positive value, positive offset, base word aligned
+  19              	
+  20 0020 3C080000 		lui		$t0, %hi(pos+8)
+  21 0024 21080008 		addi		$t0, $t0, %lo(pos+8)
+  22 0028 81090002 		lb		$t1, 2($t0)
+  23 002c 3C030000 		TEST_EXPECT	$t1, 0x0000003a
+  23      2063003A 
+  23      15230048 
+  23      00000000 
+  24              	
+  25              		# Load positive value, negative offset, base word aligned
+GAS LISTING instruction_test_lb.s 			page 2
+
+
+  26              	
+  27 003c 3C080000 		lui		$t0, %hi(pos+8)
+  28 0040 21080008 		addi		$t0, $t0, %lo(pos+8)
+  29 0044 8109FFFE 		lb		$t1, -2($t0)
+  30 0048 3C030000 		TEST_EXPECT	$t1, 0x00000036
+  30      20630036 
+  30      15230041 
+  30      00000000 
+  31              	
+  32              		# Load positive value, zero offset, base not word aligned
+  33              	
+  34 0058 3C080000 		lui		$t0, %hi(pos+7)
+  35 005c 21080007 		addi		$t0, $t0, %lo(pos+7)
+  36 0060 81090000 		lb		$t1, 0($t0)
+  37 0064 3C030000 		TEST_EXPECT	$t1, 0x00000037
+  37      20630037 
+  37      1523003A 
+  37      00000000 
+  38              	
+  39              		# Load positive value, positive offset, base not word aligned
+  40              	
+  41 0074 3C080000 		lui		$t0, %hi(pos+7)
+  42 0078 21080007 		addi		$t0, $t0, %lo(pos+7)
+  43 007c 81090002 		lb		$t1, 2($t0)
+  44 0080 3C030000 		TEST_EXPECT	$t1, 0x00000039
+  44      20630039 
+  44      15230033 
+  44      00000000 
+  45              	
+  46              		# Load positive value, negative offset, base not word aligned
+  47              	
+  48 0090 3C080000 		lui		$t0, %hi(pos+7)
+  49 0094 21080007 		addi		$t0, $t0, %lo(pos+7)
+  50 0098 8109FFFE 		lb		$t1, -2($t0)
+  51 009c 3C030000 		TEST_EXPECT	$t1, 0x00000035
+  51      20630035 
+  51      1523002C 
+  51      00000000 
+  52              	
+  53              		# ################################################################
+  54              	
+  55              		# Load negative value, zero offset, base word aligned
+  56              	
+  57 00ac 3C080000 		lui		$t0, %hi(neg+8)
+  58 00b0 21080018 		addi		$t0, $t0, %lo(neg+8)
+  59 00b4 81090000 		lb		$t1, 0($t0)
+  60 00b8 3C030000 		TEST_EXPECT	$t1, 0xfffffff8
+  60      2063FFF8 
+  60      15230025 
+  60      00000000 
+  61              	
+  62              		# Load negative value, positive offset, base word aligned
+  63              	
+  64 00c8 3C080000 		lui		$t0, %hi(neg+8)
+  65 00cc 21080018 		addi		$t0, $t0, %lo(neg+8)
+  66 00d0 81090002 		lb		$t1, 2($t0)
+  67 00d4 3C030000 		TEST_EXPECT	$t1, 0xfffffffa
+GAS LISTING instruction_test_lb.s 			page 3
+
+
+  67      2063FFFA 
+  67      1523001E 
+  67      00000000 
+  68              	
+  69              		# Load negative value, negative offset, base word aligned
+  70              	
+  71 00e4 3C080000 		lui		$t0, %hi(neg+8)
+  72 00e8 21080018 		addi		$t0, $t0, %lo(neg+8)
+  73 00ec 8109FFFE 		lb		$t1, -2($t0)
+  74 00f0 3C030000 		TEST_EXPECT	$t1, 0xfffffff6
+  74      2063FFF6 
+  74      15230017 
+  74      00000000 
+  75              	
+  76              		# Load negative value, zero offset, base not word aligned
+  77              	
+  78 0100 3C080000 		lui		$t0, %hi(neg+7)
+  79 0104 21080017 		addi		$t0, $t0, %lo(neg+7)
+  80 0108 81090000 		lb		$t1, 0($t0)
+  81 010c 3C030000 		TEST_EXPECT	$t1, 0xfffffff7
+  81      2063FFF7 
+  81      15230010 
+  81      00000000 
+  82              	
+  83              		# Load negative value, positive offset, base not word aligned
+  84              	
+  85 011c 3C080000 		lui		$t0, %hi(neg+7)
+  86 0120 21080017 		addi		$t0, $t0, %lo(neg+7)
+  87 0124 81090002 		lb		$t1, 2($t0)
+  88 0128 3C030000 		TEST_EXPECT	$t1, 0xfffffff9
+  88      2063FFF9 
+  88      15230009 
+  88      00000000 
+  89              	
+  90              		# Load negative value, negative offset, base not word aligned
+  91              	
+  92 0138 3C080000 		lui		$t0, %hi(neg+7)
+  93 013c 21080017 		addi		$t0, $t0, %lo(neg+7)
+  94 0140 8109FFFE 		lb		$t1, -2($t0)
+  95 0144 3C030000 		TEST_EXPECT	$t1, 0xfffffff5
+  95      2063FFF5 
+  95      15230002 
+  95      00000000 
+  96              	
+  97              	
+  98 0154 20020001 		TEST_END
+  98      00000008 
+  98      00000000 
+  99              	
+ 100              		.data
+ 101              		.align	2
+ 102              		
+ 103 0000 30313233 	pos:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+ 103      34353637 
+ 104 0008 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+ 104      3C3D3E3F 
+ 105              		
+GAS LISTING instruction_test_lb.s 			page 4
+
+
+ 106 0010 F0F1F2F3 	neg:	.byte	0xf0, 0xf1, 0xf2, 0xf3, 0xf4, 0xf5, 0xf6, 0xf7
+ 106      F4F5F6F7 
+ 107 0018 F8F9FAFB 		.byte	0xf8, 0xf9, 0xfa, 0xfb, 0xfc, 0xfd, 0xfe, 0xff
+ 107      FCFDFEFF 
+ 108              		
+ 109              		
+GAS LISTING instruction_test_lb.s 			page 5
+
+
+DEFINED SYMBOLS
+instruction_test_lb.s:7      .text:0000000000000000 __start
+instruction_test_lb.s:103    .data:0000000000000000 pos
+instruction_test_lb.s:98     .text:0000000000000158 _test_finish
+instruction_test_lb.s:106    .data:0000000000000010 neg
+
+NO UNDEFINED SYMBOLS

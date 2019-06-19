@@ -1,0 +1,198 @@
+GAS LISTING instruction_test_sltiu.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# ################################################################
+  12              		# True result
+  13              	
+  14              		# positive arguments
+  15              	
+  16 0004 3C100000 		lui		$s0, %hi(1000)
+  17 0008 221003E8 		addi		$s0, $s0, %lo(1000)
+  18 000c 2E1207D0 		sltiu		$s2, $s0, 2000
+  19 0010 3C030000 		TEST_EXPECT	$s2, 1
+  19      20630001 
+  19      16430056 
+  19      00000000 
+  20              	
+  21              		# negative arguments
+  22              	
+  23 0020 3C100000 		lui		$s0, %hi(-2000)
+  24 0024 2210F830 		addi		$s0, $s0, %lo(-2000)
+  25 0028 2E12FC18 		sltiu		$s2, $s0, -1000
+  26 002c 3C030000 		TEST_EXPECT	$s2, 1
+  26      20630001 
+  26      1643004F 
+GAS LISTING instruction_test_sltiu.s 			page 2
+
+
+  26      00000000 
+  27              		
+  28              		# positive/negative arguments
+  29              	
+  30 003c 3C100000 		lui		$s0, %hi(1000)
+  31 0040 221003E8 		addi		$s0, $s0, %lo(1000)
+  32 0044 2E12FC18 		sltiu		$s2, $s0, -1000
+  33 0048 3C030000 		TEST_EXPECT	$s2, 1
+  33      20630001 
+  33      16430048 
+  33      00000000 
+  34              	
+  35              		# zero/positive arguments
+  36              	
+  37 0058 3C100000 		lui		$s0, %hi(0)
+  38 005c 22100000 		addi		$s0, $s0, %lo(0)
+  39 0060 2E1203E8 		sltiu		$s2, $s0, 1000
+  40 0064 3C030000 		TEST_EXPECT	$s2, 1
+  40      20630001 
+  40      16430041 
+  40      00000000 
+  41              	
+  42              		# zero/negative arguments
+  43              	
+  44 0074 3C100000 		lui		$s0, %hi(0)
+  45 0078 22100000 		addi		$s0, $s0, %lo(0)
+  46 007c 2E12FC18 		sltiu		$s2, $s0, -1000
+  47 0080 3C030000 		TEST_EXPECT	$s2, 1
+  47      20630001 
+  47      1643003A 
+  47      00000000 
+  48              		
+  49              	
+  50              		# ################################################################
+  51              		# False result
+  52              	
+  53              		# positive arguments
+  54              	
+  55 0090 3C100000 		lui		$s0, %hi(2000)
+  56 0094 221007D0 		addi		$s0, $s0, %lo(2000)
+  57 0098 2E1203E8 		sltiu		$s2, $s0, 1000
+  58 009c 3C030000 		TEST_EXPECT	$s2, 0
+  58      20630000 
+  58      16430033 
+  58      00000000 
+  59              	
+  60              		# negative arguments
+  61              	
+  62 00ac 3C100000 		lui		$s0, %hi(-1000)
+  63 00b0 2210FC18 		addi		$s0, $s0, %lo(-1000)
+  64 00b4 2E12F830 		sltiu		$s2, $s0, -2000
+  65 00b8 3C030000 		TEST_EXPECT	$s2, 0
+  65      20630000 
+  65      1643002C 
+  65      00000000 
+  66              		
+  67              		# negative/positive arguments
+GAS LISTING instruction_test_sltiu.s 			page 3
+
+
+  68              		
+  69 00c8 3C100000 		lui		$s0, %hi(-1000)
+  70 00cc 2210FC18 		addi		$s0, $s0, %lo(-1000)
+  71 00d0 2E1203E8 		sltiu		$s2, $s0, 1000
+  72 00d4 3C030000 		TEST_EXPECT	$s2, 0
+  72      20630000 
+  72      16430025 
+  72      00000000 
+  73              		
+  74              		# positive/zero arguments
+  75              	
+  76 00e4 3C100000 		lui		$s0, %hi(1000)
+  77 00e8 221003E8 		addi		$s0, $s0, %lo(1000)
+  78 00ec 2E120000 		sltiu		$s2, $s0, 0
+  79 00f0 3C030000 		TEST_EXPECT	$s2, 0
+  79      20630000 
+  79      1643001E 
+  79      00000000 
+  80              		
+  81              		# negative/zero arguments
+  82              	
+  83 0100 3C100000 		lui		$s0, %hi(-1000)
+  84 0104 2210FC18 		addi		$s0, $s0, %lo(-1000)
+  85 0108 2E120000 		sltiu		$s2, $s0, 0
+  86 010c 3C030000 		TEST_EXPECT	$s2, 0
+  86      20630000 
+  86      16430017 
+  86      00000000 
+  87              		
+  88              		# equal positive
+  89              	
+  90 011c 3C100000 		lui		$s0, %hi(1000)
+  91 0120 221003E8 		addi		$s0, $s0, %lo(1000)
+  92 0124 2E1203E8 		sltiu		$s2, $s0, 1000
+  93 0128 3C030000 		TEST_EXPECT	$s2, 0
+  93      20630000 
+  93      16430010 
+  93      00000000 
+  94              		
+  95              		# equal negative
+  96              	
+  97 0138 3C100000 		lui		$s0, %hi(-1000)
+  98 013c 2210FC18 		addi		$s0, $s0, %lo(-1000)
+  99 0140 2E12FC18 		sltiu		$s2, $s0, -1000
+ 100 0144 3C030000 		TEST_EXPECT	$s2, 0
+ 100      20630000 
+ 100      16430009 
+ 100      00000000 
+ 101              		
+ 102              		# equal zero
+ 103              	
+ 104 0154 3C100000 		lui		$s0, %hi(0)
+ 105 0158 22100000 		addi		$s0, $s0, %lo(0)
+ 106 015c 2E120000 		sltiu		$s2, $s0, 0
+ 107 0160 3C030000 		TEST_EXPECT	$s2, 0
+ 107      20630000 
+ 107      16430002 
+GAS LISTING instruction_test_sltiu.s 			page 4
+
+
+ 107      00000000 
+ 108              		
+ 109              	
+ 110 0170 20020001 		TEST_END
+ 110      00000008 
+ 110      00000000 
+ 111              		
+GAS LISTING instruction_test_sltiu.s 			page 5
+
+
+DEFINED SYMBOLS
+instruction_test_sltiu.s:7      .text:0000000000000000 __start
+instruction_test_sltiu.s:110    .text:0000000000000174 _test_finish
+
+NO UNDEFINED SYMBOLS

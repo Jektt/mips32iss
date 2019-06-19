@@ -1,0 +1,19 @@
+Memory read word: address = 00002000, data = 01000008
+Fetch: pc = 00002000, ir = 01000008
+jr: rs = 8
+00002004
+Memory read word: address = 00002004, data = 00000000
+Fetch: pc = 00002004, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+00800000
+00800000
+Memory read word: address = 30003000, data = 01000008
+Fetch: pc = 30003000, ir = 01000008
+jr: rs = 8
+30003004
+Memory read word: address = 30003004, data = 00000000
+Fetch: pc = 30003004, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+00600000
+00600000
+Instructions executed: 4

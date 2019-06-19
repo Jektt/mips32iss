@@ -1,0 +1,299 @@
+Dcache: size = 1KB, block size = 64, associativity = 4
+Memory: address access cycles = 11, word access cycles = 8
+Data cache: tag_mask = ffffff00, set index mask = 000000c0, offset mask = 0000003f, write through
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 80000000, 16 words
+8f000000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, miss
+Data cache: Replacing entry 1
+Memory read block: address = 80001000, 16 words
+8f001000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, miss
+Data cache: Replacing entry 2
+Memory read block: address = 80002000, 16 words
+8f002000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, miss
+Data cache: Replacing entry 3
+Memory read block: address = 80003000, 16 words
+8f003000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+8f000000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+8f001000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+8f002000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f003000
+Memory read word: address = 00000000, data = 8c220000
+Fetch: pc = 00000000, ir = 8c220000
+lw: rt = 2, rs = 1, imm = 00000000
+Data cache: read word address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+8f003000
+CPU: probe data address = 80000000
+Data cache: probe address = 80000000
+Data cache: lookup address = 80000000: tag = 800000, set = 0, offset = 0, hit, entry = 0
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f000000
+CPU: probe data address = 80001000
+Data cache: probe address = 80001000
+Data cache: lookup address = 80001000: tag = 800010, set = 0, offset = 0, hit, entry = 1
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f001000
+CPU: probe data address = 80002000
+Data cache: probe address = 80002000
+Data cache: lookup address = 80002000: tag = 800020, set = 0, offset = 0, hit, entry = 2
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f002000
+CPU: probe data address = 80003000
+Data cache: probe address = 80003000
+Data cache: lookup address = 80003000: tag = 800030, set = 0, offset = 0, hit, entry = 3
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 8f003000
+Instructions executed: 8
+Data cache access count: 8
+Data cache miss rate: 0.500000
+memory access count: 12
+CPU cycle count: 8
+Stall cycles accessing memory: 708
+Average CPI (ideal): 1.000000
+Average CPI (actual): 89.500000

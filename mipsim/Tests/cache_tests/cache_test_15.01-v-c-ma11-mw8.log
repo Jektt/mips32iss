@@ -1,0 +1,521 @@
+Icache: size = 64KB, block size = 16, associativity = 1
+Dcache: size = 64KB, block size = 8, associativity = 1
+Memory: address access cycles = 11, word access cycles = 8
+Instruction cache: tag_mask = ffff0000, set index mask = 0000fff0, offset mask = 0000000f, read only
+Data cache: tag_mask = ffff0000, set index mask = 0000fff8, offset mask = 00000007, write through
+Breakpoint set at 00000030
+Instruction cache: read word address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, miss
+Instruction cache: Replacing entry 0
+Memory read block: address = 00000000, 4 words
+Fetch: pc = 00000000, ir = 20020000
+addi: rt = 2, rs = 0, imm = 00000000
+Instruction cache: read word address = 00000004
+Instruction cache: lookup address = 00000004: tag = 0, set = 0, offset = 4, hit, entry = 0
+Fetch: pc = 00000004, ir = 08000008
+j: addr = 00000008
+Instruction cache: read word address = 00000008
+Instruction cache: lookup address = 00000008: tag = 0, set = 0, offset = 8, hit, entry = 0
+Fetch: pc = 00000008, ir = 20030000
+addi: rt = 3, rs = 0, imm = 00000000
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, miss
+Instruction cache: Replacing entry 0
+Memory read block: address = 00000020, 4 words
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, miss
+Instruction cache: Replacing entry 0
+Memory read block: address = 00000010, 4 words
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000040
+Data cache: lookup address = 00000040: tag = 0, set = 8, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 00000040, 2 words
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000044
+Data cache: lookup address = 00000044: tag = 0, set = 8, offset = 4, hit, entry = 0
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000048
+Data cache: lookup address = 00000048: tag = 0, set = 9, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 00000048, 2 words
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 0000004c
+Data cache: lookup address = 0000004c: tag = 0, set = 9, offset = 4, hit, entry = 0
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000050
+Data cache: lookup address = 00000050: tag = 0, set = a, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 00000050, 2 words
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000054
+Data cache: lookup address = 00000054: tag = 0, set = a, offset = 4, hit, entry = 0
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000058
+Data cache: lookup address = 00000058: tag = 0, set = b, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 00000058, 2 words
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 0000005c
+Data cache: lookup address = 0000005c: tag = 0, set = b, offset = 4, hit, entry = 0
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000060
+Data cache: lookup address = 00000060: tag = 0, set = c, offset = 0, miss
+Data cache: Replacing entry 0
+Memory read block: address = 00000060, 2 words
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000000c
+Instruction cache: lookup address = 0000000c: tag = 0, set = 0, offset = c, hit, entry = 0
+Fetch: pc = 0000000c, ir = 00422020
+add: rd = 4, rs = 2, rt = 2
+Instruction cache: read word address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Fetch: pc = 00000010, ir = 00842020
+add: rd = 4, rs = 4, rt = 4
+Instruction cache: read word address = 00000014
+Instruction cache: lookup address = 00000014: tag = 0, set = 1, offset = 4, hit, entry = 0
+Fetch: pc = 00000014, ir = 8c850040
+lw: rt = 5, rs = 4, imm = 00000040
+Data cache: read word address = 00000064
+Data cache: lookup address = 00000064: tag = 0, set = c, offset = 4, hit, entry = 0
+Instruction cache: read word address = 00000018
+Instruction cache: lookup address = 00000018: tag = 0, set = 1, offset = 8, hit, entry = 0
+Fetch: pc = 00000018, ir = 00651820
+add: rd = 3, rs = 3, rt = 5
+Instruction cache: read word address = 0000001c
+Instruction cache: lookup address = 0000001c: tag = 0, set = 1, offset = c, hit, entry = 0
+Fetch: pc = 0000001c, ir = 20420001
+addi: rt = 2, rs = 2, imm = 00000001
+Instruction cache: read word address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Fetch: pc = 00000020, ir = 2846000a
+slti: rt = 6, rs = 2, imm = 0000000a
+Instruction cache: read word address = 00000024
+Instruction cache: lookup address = 00000024: tag = 0, set = 2, offset = 4, hit, entry = 0
+Fetch: pc = 00000024, ir = 14c0fff9
+bne: rs = 6, rt = 0, imm = fffffff9
+Instruction cache: read word address = 00000028
+Instruction cache: lookup address = 00000028: tag = 0, set = 2, offset = 8, hit, entry = 0
+Fetch: pc = 00000028, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Instruction cache: read word address = 0000002c
+Instruction cache: lookup address = 0000002c: tag = 0, set = 2, offset = c, hit, entry = 0
+Fetch: pc = 0000002c, ir = ac030068
+sw: rt = 3, rs = 0, imm = 00000068
+Data cache: write word address = 00000068, data = 00000037, mask = ffffffff
+Data cache: lookup address = 00000068: tag = 0, set = d, offset = 0, miss
+Memory write word: address = 00000068, data = 00000037, mask = ffffffff
+Breakpoint reached at 00000030
+00000037
+0000000a
+00000037
+00000024
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 0, entry = 0:
+    20020000 08000008 20030000 00422020
+Memory: 20020000
+CPU: probe instruction address = 00000010
+Instruction cache: probe address = 00000010
+Instruction cache: lookup address = 00000010: tag = 0, set = 1, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 1, entry = 0:
+    00842020 8c850040 00651820 20420001
+Memory: 00842020
+CPU: probe instruction address = 00000020
+Instruction cache: probe address = 00000020
+Instruction cache: lookup address = 00000020: tag = 0, set = 2, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 2, entry = 0:
+    2846000a 14c0fff9 00000000 ac030068
+Memory: 2846000a
+CPU: probe instruction address = 00000030
+Instruction cache: probe address = 00000030
+Instruction cache: lookup address = 00000030: tag = 0, set = 3, offset = 0, miss
+Instruction cache: miss, set = 3
+Memory: 1000ffff
+CPU: probe instruction address = 00000040
+Instruction cache: probe address = 00000040
+Instruction cache: lookup address = 00000040: tag = 0, set = 4, offset = 0, miss
+Instruction cache: miss, set = 4
+Memory: 00000001
+CPU: probe instruction address = 00000050
+Instruction cache: probe address = 00000050
+Instruction cache: lookup address = 00000050: tag = 0, set = 5, offset = 0, miss
+Instruction cache: miss, set = 5
+Memory: 00000005
+CPU: probe instruction address = 00000060
+Instruction cache: probe address = 00000060
+Instruction cache: lookup address = 00000060: tag = 0, set = 6, offset = 0, miss
+Instruction cache: miss, set = 6
+Memory: 00000009
+CPU: probe data address = 00000000
+Data cache: probe address = 00000000
+Data cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, miss
+Data cache: miss, set = 0
+Memory: 20020000
+CPU: probe data address = 00000008
+Data cache: probe address = 00000008
+Data cache: lookup address = 00000008: tag = 0, set = 1, offset = 0, miss
+Data cache: miss, set = 1
+Memory: 20030000
+CPU: probe data address = 00000010
+Data cache: probe address = 00000010
+Data cache: lookup address = 00000010: tag = 0, set = 2, offset = 0, miss
+Data cache: miss, set = 2
+Memory: 00842020
+CPU: probe data address = 00000018
+Data cache: probe address = 00000018
+Data cache: lookup address = 00000018: tag = 0, set = 3, offset = 0, miss
+Data cache: miss, set = 3
+Memory: 00651820
+CPU: probe data address = 00000020
+Data cache: probe address = 00000020
+Data cache: lookup address = 00000020: tag = 0, set = 4, offset = 0, miss
+Data cache: miss, set = 4
+Memory: 2846000a
+CPU: probe data address = 00000028
+Data cache: probe address = 00000028
+Data cache: lookup address = 00000028: tag = 0, set = 5, offset = 0, miss
+Data cache: miss, set = 5
+Memory: 00000000
+CPU: probe data address = 00000030
+Data cache: probe address = 00000030
+Data cache: lookup address = 00000030: tag = 0, set = 6, offset = 0, miss
+Data cache: miss, set = 6
+Memory: 1000ffff
+CPU: probe data address = 00000038
+Data cache: probe address = 00000038
+Data cache: lookup address = 00000038: tag = 0, set = 7, offset = 0, miss
+Data cache: miss, set = 7
+Memory: 00000000
+CPU: probe data address = 00000040
+Data cache: probe address = 00000040
+Data cache: lookup address = 00000040: tag = 0, set = 8, offset = 0, hit, entry = 0
+Data cache: hit, set = 8, entry = 0:
+    00000001 00000002
+Memory: 00000001
+CPU: probe data address = 00000048
+Data cache: probe address = 00000048
+Data cache: lookup address = 00000048: tag = 0, set = 9, offset = 0, hit, entry = 0
+Data cache: hit, set = 9, entry = 0:
+    00000003 00000004
+Memory: 00000003
+CPU: probe data address = 00000050
+Data cache: probe address = 00000050
+Data cache: lookup address = 00000050: tag = 0, set = a, offset = 0, hit, entry = 0
+Data cache: hit, set = a, entry = 0:
+    00000005 00000006
+Memory: 00000005
+CPU: probe data address = 00000058
+Data cache: probe address = 00000058
+Data cache: lookup address = 00000058: tag = 0, set = b, offset = 0, hit, entry = 0
+Data cache: hit, set = b, entry = 0:
+    00000007 00000008
+Memory: 00000007
+CPU: probe data address = 00000060
+Data cache: probe address = 00000060
+Data cache: lookup address = 00000060: tag = 0, set = c, offset = 0, hit, entry = 0
+Data cache: hit, set = c, entry = 0:
+    00000009 0000000a
+Memory: 00000009
+CPU: probe data address = 00000068
+Data cache: probe address = 00000068
+Data cache: lookup address = 00000068: tag = 0, set = d, offset = 0, miss
+Data cache: miss, set = d
+Memory: 00000037
+Instructions executed: 87
+Instruction cache access count: 87
+Instruction cache miss rate: 0.034483
+Data cache access count: 11
+Data cache miss rate: 0.545455
+memory access count: 9
+CPU cycle count: 98
+Stall cycles accessing memory: 264
+Average CPI (ideal): 1.126437
+Average CPI (actual): 4.160920

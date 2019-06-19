@@ -1,0 +1,46 @@
+/**
+// good progress, but this is just for 1 giant block of memory. We need to allocate it on demand...
+// Any valid address can we read or written to at any point.
+
+// When a read or write command is run, do the following.
+
+1. Check that the address hasn't already been allocated!
+
+How?
+Each block of memory has a 
+
+4096KB BLOCK
+*(realAddr)
+
+
+How about
+Divide the total available memory amount into X (X known) segments.
+
+When a value is given we can then determine which segment is belong to.
+
+Also have a known sized array we can use to store the REAL addresses for each segment block as its allocated
+**/
+
+Problem? MIPS can have 4GB of addressable memory. Way too many divisions here... 
+
+while (tmp <= desiredAddress) {
+	tmp = baseaddress + (4096*i) 
+	i++
+}
+
+woo now we know how many 4096 blocks we are away from the very base address
+
+Can now create a new node on the linked list that does:
+
+
+Struct Node {
+	int blocks_away_from_base = i 	// will be useful for keeping the linked list sorted !
+	int *next
+	int *prev
+	uint32_t *realAddr;
+	realAddr = new uint32_t[1024]
+	uint32_t virtAddr = baseAddr + (blocks_away_from_base * 4096)
+
+
+
+

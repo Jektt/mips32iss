@@ -1,0 +1,281 @@
+408 bytes loaded, start address = 004000b0
+Breakpoint set at 00000000
+Memory read word: address = 004000b0, data = 20020000
+Fetch: pc = 004000b0, ir = 20020000
+addi: rt = 2, rs = 0, imm = 00000000
+Memory read word: address = 004000b4, data = 3c080041
+Fetch: pc = 004000b4, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004000b8, data = 21080218
+Fetch: pc = 004000b8, ir = 21080218
+addi: rt = 8, rs = 8, imm = 00000218
+Memory read word: address = 004000bc, data = 95090000
+Fetch: pc = 004000bc, ir = 95090000
+lhu: rt = 9, rs = 8, imm = 00000000
+Memory read word: address = 00410218, data = 38393a3b
+Memory read word: address = 004000c0, data = 3c030000
+Fetch: pc = 004000c0, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 004000c4, data = 20633839
+Fetch: pc = 004000c4, ir = 20633839
+addi: rt = 3, rs = 3, imm = 00003839
+Memory read word: address = 004000c8, data = 1523004f
+Fetch: pc = 004000c8, ir = 1523004f
+bne: rs = 9, rt = 3, imm = 0000004f
+Memory read word: address = 004000cc, data = 00000000
+Fetch: pc = 004000cc, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004000d0, data = 3c080041
+Fetch: pc = 004000d0, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004000d4, data = 21080218
+Fetch: pc = 004000d4, ir = 21080218
+addi: rt = 8, rs = 8, imm = 00000218
+Memory read word: address = 004000d8, data = 95090002
+Fetch: pc = 004000d8, ir = 95090002
+lhu: rt = 9, rs = 8, imm = 00000002
+Memory read word: address = 00410218, data = 38393a3b
+Memory read word: address = 004000dc, data = 3c030000
+Fetch: pc = 004000dc, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 004000e0, data = 20633a3b
+Fetch: pc = 004000e0, ir = 20633a3b
+addi: rt = 3, rs = 3, imm = 00003a3b
+Memory read word: address = 004000e4, data = 15230048
+Fetch: pc = 004000e4, ir = 15230048
+bne: rs = 9, rt = 3, imm = 00000048
+Memory read word: address = 004000e8, data = 00000000
+Fetch: pc = 004000e8, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004000ec, data = 3c080041
+Fetch: pc = 004000ec, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004000f0, data = 21080218
+Fetch: pc = 004000f0, ir = 21080218
+addi: rt = 8, rs = 8, imm = 00000218
+Memory read word: address = 004000f4, data = 9509fffe
+Fetch: pc = 004000f4, ir = 9509fffe
+lhu: rt = 9, rs = 8, imm = fffffffe
+Memory read word: address = 00410214, data = 34353637
+Memory read word: address = 004000f8, data = 3c030000
+Fetch: pc = 004000f8, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 004000fc, data = 20633637
+Fetch: pc = 004000fc, ir = 20633637
+addi: rt = 3, rs = 3, imm = 00003637
+Memory read word: address = 00400100, data = 15230041
+Fetch: pc = 00400100, ir = 15230041
+bne: rs = 9, rt = 3, imm = 00000041
+Memory read word: address = 00400104, data = 00000000
+Fetch: pc = 00400104, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400108, data = 3c080041
+Fetch: pc = 00400108, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 0040010c, data = 21080216
+Fetch: pc = 0040010c, ir = 21080216
+addi: rt = 8, rs = 8, imm = 00000216
+Memory read word: address = 00400110, data = 95090000
+Fetch: pc = 00400110, ir = 95090000
+lhu: rt = 9, rs = 8, imm = 00000000
+Memory read word: address = 00410214, data = 34353637
+Memory read word: address = 00400114, data = 3c030000
+Fetch: pc = 00400114, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 00400118, data = 20633637
+Fetch: pc = 00400118, ir = 20633637
+addi: rt = 3, rs = 3, imm = 00003637
+Memory read word: address = 0040011c, data = 1523003a
+Fetch: pc = 0040011c, ir = 1523003a
+bne: rs = 9, rt = 3, imm = 0000003a
+Memory read word: address = 00400120, data = 00000000
+Fetch: pc = 00400120, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400124, data = 3c080041
+Fetch: pc = 00400124, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 00400128, data = 21080216
+Fetch: pc = 00400128, ir = 21080216
+addi: rt = 8, rs = 8, imm = 00000216
+Memory read word: address = 0040012c, data = 95090004
+Fetch: pc = 0040012c, ir = 95090004
+lhu: rt = 9, rs = 8, imm = 00000004
+Memory read word: address = 00410218, data = 38393a3b
+Memory read word: address = 00400130, data = 3c030000
+Fetch: pc = 00400130, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 00400134, data = 20633a3b
+Fetch: pc = 00400134, ir = 20633a3b
+addi: rt = 3, rs = 3, imm = 00003a3b
+Memory read word: address = 00400138, data = 15230033
+Fetch: pc = 00400138, ir = 15230033
+bne: rs = 9, rt = 3, imm = 00000033
+Memory read word: address = 0040013c, data = 00000000
+Fetch: pc = 0040013c, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400140, data = 3c080041
+Fetch: pc = 00400140, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 00400144, data = 21080216
+Fetch: pc = 00400144, ir = 21080216
+addi: rt = 8, rs = 8, imm = 00000216
+Memory read word: address = 00400148, data = 9509fffc
+Fetch: pc = 00400148, ir = 9509fffc
+lhu: rt = 9, rs = 8, imm = fffffffc
+Memory read word: address = 00410210, data = 30313233
+Memory read word: address = 0040014c, data = 3c030000
+Fetch: pc = 0040014c, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 00400150, data = 20633233
+Fetch: pc = 00400150, ir = 20633233
+addi: rt = 3, rs = 3, imm = 00003233
+Memory read word: address = 00400154, data = 1523002c
+Fetch: pc = 00400154, ir = 1523002c
+bne: rs = 9, rt = 3, imm = 0000002c
+Memory read word: address = 00400158, data = 00000000
+Fetch: pc = 00400158, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 0040015c, data = 3c080041
+Fetch: pc = 0040015c, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 00400160, data = 21080228
+Fetch: pc = 00400160, ir = 21080228
+addi: rt = 8, rs = 8, imm = 00000228
+Memory read word: address = 00400164, data = 95090000
+Fetch: pc = 00400164, ir = 95090000
+lhu: rt = 9, rs = 8, imm = 00000000
+Memory read word: address = 00410228, data = f8f9fafb
+Memory read word: address = 00400168, data = 3c030001
+Fetch: pc = 00400168, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 0040016c, data = 2063f8f9
+Fetch: pc = 0040016c, ir = 2063f8f9
+addi: rt = 3, rs = 3, imm = fffff8f9
+Memory read word: address = 00400170, data = 15230025
+Fetch: pc = 00400170, ir = 15230025
+bne: rs = 9, rt = 3, imm = 00000025
+Memory read word: address = 00400174, data = 00000000
+Fetch: pc = 00400174, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400178, data = 3c080041
+Fetch: pc = 00400178, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 0040017c, data = 21080228
+Fetch: pc = 0040017c, ir = 21080228
+addi: rt = 8, rs = 8, imm = 00000228
+Memory read word: address = 00400180, data = 95090002
+Fetch: pc = 00400180, ir = 95090002
+lhu: rt = 9, rs = 8, imm = 00000002
+Memory read word: address = 00410228, data = f8f9fafb
+Memory read word: address = 00400184, data = 3c030001
+Fetch: pc = 00400184, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 00400188, data = 2063fafb
+Fetch: pc = 00400188, ir = 2063fafb
+addi: rt = 3, rs = 3, imm = fffffafb
+Memory read word: address = 0040018c, data = 1523001e
+Fetch: pc = 0040018c, ir = 1523001e
+bne: rs = 9, rt = 3, imm = 0000001e
+Memory read word: address = 00400190, data = 00000000
+Fetch: pc = 00400190, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400194, data = 3c080041
+Fetch: pc = 00400194, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 00400198, data = 21080228
+Fetch: pc = 00400198, ir = 21080228
+addi: rt = 8, rs = 8, imm = 00000228
+Memory read word: address = 0040019c, data = 9509fffe
+Fetch: pc = 0040019c, ir = 9509fffe
+lhu: rt = 9, rs = 8, imm = fffffffe
+Memory read word: address = 00410224, data = f4f5f6f7
+Memory read word: address = 004001a0, data = 3c030001
+Fetch: pc = 004001a0, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 004001a4, data = 2063f6f7
+Fetch: pc = 004001a4, ir = 2063f6f7
+addi: rt = 3, rs = 3, imm = fffff6f7
+Memory read word: address = 004001a8, data = 15230017
+Fetch: pc = 004001a8, ir = 15230017
+bne: rs = 9, rt = 3, imm = 00000017
+Memory read word: address = 004001ac, data = 00000000
+Fetch: pc = 004001ac, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004001b0, data = 3c080041
+Fetch: pc = 004001b0, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004001b4, data = 21080226
+Fetch: pc = 004001b4, ir = 21080226
+addi: rt = 8, rs = 8, imm = 00000226
+Memory read word: address = 004001b8, data = 95090000
+Fetch: pc = 004001b8, ir = 95090000
+lhu: rt = 9, rs = 8, imm = 00000000
+Memory read word: address = 00410224, data = f4f5f6f7
+Memory read word: address = 004001bc, data = 3c030001
+Fetch: pc = 004001bc, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 004001c0, data = 2063f6f7
+Fetch: pc = 004001c0, ir = 2063f6f7
+addi: rt = 3, rs = 3, imm = fffff6f7
+Memory read word: address = 004001c4, data = 15230010
+Fetch: pc = 004001c4, ir = 15230010
+bne: rs = 9, rt = 3, imm = 00000010
+Memory read word: address = 004001c8, data = 00000000
+Fetch: pc = 004001c8, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004001cc, data = 3c080041
+Fetch: pc = 004001cc, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004001d0, data = 21080226
+Fetch: pc = 004001d0, ir = 21080226
+addi: rt = 8, rs = 8, imm = 00000226
+Memory read word: address = 004001d4, data = 95090004
+Fetch: pc = 004001d4, ir = 95090004
+lhu: rt = 9, rs = 8, imm = 00000004
+Memory read word: address = 00410228, data = f8f9fafb
+Memory read word: address = 004001d8, data = 3c030001
+Fetch: pc = 004001d8, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 004001dc, data = 2063fafb
+Fetch: pc = 004001dc, ir = 2063fafb
+addi: rt = 3, rs = 3, imm = fffffafb
+Memory read word: address = 004001e0, data = 15230009
+Fetch: pc = 004001e0, ir = 15230009
+bne: rs = 9, rt = 3, imm = 00000009
+Memory read word: address = 004001e4, data = 00000000
+Fetch: pc = 004001e4, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004001e8, data = 3c080041
+Fetch: pc = 004001e8, ir = 3c080041
+lui: rt = 8, imm = 00000041
+Memory read word: address = 004001ec, data = 21080226
+Fetch: pc = 004001ec, ir = 21080226
+addi: rt = 8, rs = 8, imm = 00000226
+Memory read word: address = 004001f0, data = 9509fffc
+Fetch: pc = 004001f0, ir = 9509fffc
+lhu: rt = 9, rs = 8, imm = fffffffc
+Memory read word: address = 00410220, data = f0f1f2f3
+Memory read word: address = 004001f4, data = 3c030001
+Fetch: pc = 004001f4, ir = 3c030001
+lui: rt = 3, imm = 00000001
+Memory read word: address = 004001f8, data = 2063f2f3
+Fetch: pc = 004001f8, ir = 2063f2f3
+addi: rt = 3, rs = 3, imm = fffff2f3
+Memory read word: address = 004001fc, data = 15230002
+Fetch: pc = 004001fc, ir = 15230002
+bne: rs = 9, rt = 3, imm = 00000002
+Memory read word: address = 00400200, data = 00000000
+Fetch: pc = 00400200, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400204, data = 20020001
+Fetch: pc = 00400204, ir = 20020001
+addi: rt = 2, rs = 0, imm = 00000001
+Memory read word: address = 00400208, data = 00000008
+Fetch: pc = 00400208, ir = 00000008
+jr: rs = 0
+Memory read word: address = 0040020c, data = 00000000
+Fetch: pc = 0040020c, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Breakpoint reached at 00000000
+00000001
+Instructions executed: 88

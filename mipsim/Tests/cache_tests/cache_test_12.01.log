@@ -1,0 +1,571 @@
+Data cache: miss, set = 0
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f002000
+Data cache: miss, set = 0
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f002000
+Data cache: miss, set = 0
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f001000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f002000
+Data cache: miss, set = 0
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f002000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: miss, set = 0
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f003000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 1
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f000010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: miss, set = 1
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f001010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: miss, set = 1
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f002010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f003010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: hit, set = 1, entry = 3:
+    8f003010 00000000 00000000 00000000
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f000010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: hit, set = 1, entry = 3:
+    8f003010 00000000 00000000 00000000
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f001010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: hit, set = 1, entry = 3:
+    8f003010 00000000 00000000 00000000
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f002010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: hit, set = 1, entry = 3:
+    8f003010 00000000 00000000 00000000
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f004000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: hit, set = 1, entry = 3:
+    8f003010 00000000 00000000 00000000
+Memory: 8f003010
+Data cache: miss, set = 1
+Memory: 8f004010
+8f004010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f002000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f003000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f000010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f001010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+8f002010
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 2:
+    8f002000 00000000 00000000 00000000
+Memory: 8f002000
+Data cache: hit, set = 0, entry = 3:
+    8f003000 00000000 00000000 00000000
+Memory: 8f003000
+Data cache: hit, set = 0, entry = 1:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: hit, set = 1, entry = 0:
+    8f000010 00000000 00000000 00000000
+Memory: 8f000010
+Data cache: hit, set = 1, entry = 1:
+    8f001010 00000000 00000000 00000000
+Memory: 8f001010
+Data cache: hit, set = 1, entry = 2:
+    8f002010 00000000 00000000 00000000
+Memory: 8f002010
+Data cache: miss, set = 1
+Memory: 8f003010
+Data cache: hit, set = 1, entry = 3:
+    8f004010 00000000 00000000 00000000
+Memory: 8f004010
+Instructions executed: 20
+Data cache access count: 20
+Data cache miss rate: 0.500000

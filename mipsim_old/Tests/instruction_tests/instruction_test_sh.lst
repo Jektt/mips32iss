@@ -1,0 +1,178 @@
+GAS LISTING instruction_test_sh.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11 0004 3C0A7060 		lui		$t2, %hi(0x70605040)
+  12 0008 214A5040 		addi		$t2, $t2, %lo(0x70605040)
+  13              	
+  14              		# Zero offset, base word aligned
+  15              	
+  16 000c 3C080000 		lui		$t0, %hi(mem01+8)
+  17 0010 21080008 		addi		$t0, $t0, %lo(mem01+8)
+  18 0014 A50A0000 		sh		$t2, 0($t0)
+  19 0018 3C0B0000 		lui		$t3, %hi(mem01)
+  20 001c 216B0000 		addi		$t3, $t3, %lo(mem01)
+  21 0020 8D690008 		lw		$t1, 8($t3)
+  22 0024 3C035040 		TEST_EXPECT	$t1, 0x50403a3b
+  22      20633A3B 
+  22      15230034 
+  22      00000000 
+  23              	
+  24              		# Positive offset, base word aligned
+  25              	
+  26 0034 3C080000 		lui		$t0, %hi(mem02+8)
+  27 0038 21080018 		addi		$t0, $t0, %lo(mem02+8)
+  28 003c A50A0002 		sh		$t2, 2($t0)
+GAS LISTING instruction_test_sh.s 			page 2
+
+
+  29 0040 3C0B0000 		lui		$t3, %hi(mem02)
+  30 0044 216B0010 		addi		$t3, $t3, %lo(mem02)
+  31 0048 8D690008 		lw		$t1, 8($t3)
+  32 004c 3C033839 		TEST_EXPECT	$t1, 0x38395040
+  32      20635040 
+  32      1523002A 
+  32      00000000 
+  33              	
+  34              		# Negative offset, base word aligned
+  35              	
+  36 005c 3C080000 		lui		$t0, %hi(mem03+8)
+  37 0060 21080028 		addi		$t0, $t0, %lo(mem03+8)
+  38 0064 A50AFFFE 		sh		$t2, -2($t0)
+  39 0068 3C0B0000 		lui		$t3, %hi(mem03)
+  40 006c 216B0020 		addi		$t3, $t3, %lo(mem03)
+  41 0070 8D690004 		lw		$t1, 4($t3)
+  42 0074 3C033435 		TEST_EXPECT	$t1, 0x34355040
+  42      20635040 
+  42      15230020 
+  42      00000000 
+  43              	
+  44              		# Zero offset, base not word aligned
+  45              	
+  46 0084 3C080000 		lui		$t0, %hi(mem04+6)
+  47 0088 21080036 		addi		$t0, $t0, %lo(mem04+6)
+  48 008c A50A0000 		sh		$t2, 0($t0)
+  49 0090 3C0B0000 		lui		$t3, %hi(mem04)
+  50 0094 216B0030 		addi		$t3, $t3, %lo(mem04)
+  51 0098 8D690004 		lw		$t1, 4($t3)
+  52 009c 3C033435 		TEST_EXPECT	$t1, 0x34355040
+  52      20635040 
+  52      15230016 
+  52      00000000 
+  53              	
+  54              		# Positive offset, base not word aligned
+  55              	
+  56 00ac 3C080000 		lui		$t0, %hi(mem05+6)
+  57 00b0 21080046 		addi		$t0, $t0, %lo(mem05+6)
+  58 00b4 A50A0004 		sh		$t2, 4($t0)
+  59 00b8 3C0B0000 		lui		$t3, %hi(mem05)
+  60 00bc 216B0040 		addi		$t3, $t3, %lo(mem05)
+  61 00c0 8D690008 		lw		$t1, 8($t3)
+  62 00c4 3C033839 		TEST_EXPECT	$t1, 0x38395040
+  62      20635040 
+  62      1523000C 
+  62      00000000 
+  63              	
+  64              		# Negative offset, base not word aligned
+  65              	
+  66 00d4 3C080000 		lui		$t0, %hi(mem06+6)
+  67 00d8 21080056 		addi		$t0, $t0, %lo(mem06+6)
+  68 00dc A50AFFFC 		sh		$t2, -4($t0)
+  69 00e0 3C0B0000 		lui		$t3, %hi(mem06)
+  70 00e4 216B0050 		addi		$t3, $t3, %lo(mem06)
+  71 00e8 8D690000 		lw		$t1, 0($t3)
+  72 00ec 3C033031 		TEST_EXPECT	$t1, 0x30315040
+  72      20635040 
+GAS LISTING instruction_test_sh.s 			page 3
+
+
+  72      15230002 
+  72      00000000 
+  73              	
+  74              	
+  75 00fc 20020001 		TEST_END
+  75      00000008 
+  75      00000000 
+  76              	
+  77              		.data
+  78              		.align	2
+  79              		
+  80 0000 30313233 	mem01:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  80      34353637 
+  81 0008 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  81      3C3D3E3F 
+  82              		
+  83 0010 30313233 	mem02:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  83      34353637 
+  84 0018 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  84      3C3D3E3F 
+  85              		
+  86 0020 30313233 	mem03:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  86      34353637 
+  87 0028 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  87      3C3D3E3F 
+  88              		
+  89 0030 30313233 	mem04:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  89      34353637 
+  90 0038 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  90      3C3D3E3F 
+  91              		
+  92 0040 30313233 	mem05:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  92      34353637 
+  93 0048 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  93      3C3D3E3F 
+  94              		
+  95 0050 30313233 	mem06:	.byte	0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
+  95      34353637 
+  96 0058 38393A3B 		.byte	0x38, 0x39, 0x3a, 0x3b, 0x3c, 0x3d, 0x3e, 0x3f
+  96      3C3D3E3F 
+  97              		
+GAS LISTING instruction_test_sh.s 			page 4
+
+
+DEFINED SYMBOLS
+instruction_test_sh.s:7      .text:0000000000000000 __start
+instruction_test_sh.s:80     .data:0000000000000000 mem01
+instruction_test_sh.s:75     .text:0000000000000100 _test_finish
+instruction_test_sh.s:83     .data:0000000000000010 mem02
+instruction_test_sh.s:86     .data:0000000000000020 mem03
+instruction_test_sh.s:89     .data:0000000000000030 mem04
+instruction_test_sh.s:92     .data:0000000000000040 mem05
+instruction_test_sh.s:95     .data:0000000000000050 mem06
+
+NO UNDEFINED SYMBOLS

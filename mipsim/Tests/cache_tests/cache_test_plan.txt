@@ -1,0 +1,173 @@
+Icache cold-start miss then hits
+
+01.01: -is 64 -ib 16 -ia 1
+       Successive reads from addresses 0, 100, 200, 300
+
+Icache block size
+
+02.01: -is 64 -ib 16 -ia 1
+       Reads from successive addresses
+
+02.02: -is 64 -ib 8 -ia 1
+       Reads from successive addresses
+
+02.03: -is 64 -ib 4 -ia 1
+       Reads from successive addresses
+
+Icache size
+
+03.01: -is 1 -ib 256 -ia 1
+       Reads from successive blocks
+
+03.02: -is 1 -ib 512 -ia 1
+       Reads from successive blocks
+
+Icache associativity
+
+04.01: -is 1 -ib 64 -ia 2
+       Read from 2 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+04.02: -is 1 -ib 64 -ia 4
+       Read from 4 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+04.03: -is 1 -ib 64 -ia full
+       Read from 16 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+Icache LRU replacement within a set
+
+05.01: -is 8 -ib 16 -ia 2
+       Read from 2 locations each mapping to set 0.
+       Expect cold-start misses.
+       repeat 2 times:
+           Read from another location mapping to set 0.
+           Expect miss with replacement of LRU entry.
+           Read from non-replaced entries, expect hit.
+           Read from replaced address, expect miss.
+
+05.02: -is 16 -ib 16 -ia 4
+       Read from 4 locations each mapping to set 0.
+       Expect cold-start misses.
+       repeat 2 times:
+           Read from another location mapping to set 0.
+           Expect miss with replacement of LRU entry.
+           Read from non-replaced entries, expect hit.
+           Read from replaced address, expect miss.
+
+Icache LRU replacement independence between sets
+
+06.01: -is 16 -ib 16 -ia 4
+       Read from 4 locations each mapping to set 0.
+       Read from entry 0 in set 0, making entry 1 LRU.
+       Read from 4 locations each mapping to set 1.
+       Read from entries 0, 1, 2 in set 1, making entry 3 LRU.
+       Read from another location mapping to set 0, entry 1 replaced.
+       Read from another location mapping to set 1, entry 3 replaced.
+       Read from entries 0, 2, 3 in set 0, expect all hits.
+       Read from entries 0, 1, 2 in set 1, expect all hits.
+
+
+Dcache cold-start miss then hits
+
+07.01: -ds 64 -db 16 -da 1 -dwt
+       Successive reads from addresses 80000000, 80000100, 80000200, 80000300
+
+Dcache block size
+
+08.01: -ds 64 -db 16 -da 1 -dwt
+       Reads from successive addresses
+
+08.02: -ds 64 -db 8 -da 1 -dwt
+       Reads from successive addresses
+
+08.03: -ds 64 -db 4 -da 1 -dwt
+       Reads from successive addresses
+
+Dcache size
+
+09.01: -ds 1 -db 256 -da 1 -dwt
+       Reads from successive blocks
+
+09.02: -ds 1 -db 512 -da 1 -dwt
+       Reads from successive blocks
+
+Dcache associativity
+
+10.01: -ds 1 -db 64 -da 2 -dwt
+       Read from 2 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+10.02: -ds 1 -db 64 -da 4 -dwt
+       Read from 4 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+10.03: -ds 1 -db 64 -da full -dwt
+       Read from 16 addresses each mapping to set 0.
+       Expect cold start misses.
+       Then read from those addresses again, expect hit.
+
+Dcache LRU replacement within a set
+
+11.01: -ds 8 -db 16 -da 2 -dwt
+       Read from 2 locations each mapping to set 0.
+       Expect cold-start misses.
+       repeat 2 times:
+           Read from another location mapping to set 0.
+           Expect miss with replacement of LRU entry.
+           Read from non-replaced entries, expect hit.
+           Read from replaced address, expect miss.
+
+11.02: -ds 16 -db 16 -da 4 -dwt
+       Read from 4 locations each mapping to set 0.
+       Expect cold-start misses.
+       repeat 2 times:
+           Read from another location mapping to set 0.
+           Expect miss with replacement of LRU entry.
+           Read from non-replaced entries, expect hit.
+           Read from replaced address, expect miss.
+
+Dcache LRU replacement independence between sets
+
+12.01: -ds 16 -db 16 -da 4 -dwt
+       Read from 4 locations each mapping to set 0.
+       Read from entry 0 in set 0, making entry 1 LRU.
+       Read from 4 locations each mapping to set 1.
+       Read from entries 0, 1, 2 in set 1, making entry 3 LRU.
+       Read from another location mapping to set 0, entry 1 replaced.
+       Read from another location mapping to set 1, entry 3 replaced.
+       Read from entries 0, 2, 3 in set 0, expect all hits.
+       Read from entries 0, 1, 2 in set 1, expect all hits.
+
+Dcache write-through
+
+13.01: -ds 64 -db 8 -da 1 -dwt
+       Read from address in set 0.
+       Write to addresses in set 0, expect hit/write-through.
+       Write to addresses in set 1, expect miss/write-around.
+
+Dcache write-back
+
+14.01: -ds 64 -db 8 -da 1 -dwb
+       Read from address in set 0.
+       Write to address in set 0, expect write hit (entry becomes dirty).
+       Write to addresses in set 1, expect write miss (entry becomes dirty).
+       Read from 2nd address in set 0, expect miss with write-back.
+       Write to 2nd addresss in set 1, expect miss with write-back.
+       Read from 3rd address in set 0, expect miss with no write-back.
+       Read from 3rd address in set 1, expect miss with write-back.
+
+Dual caches (Icache and Dcache)
+
+15.01: -is 64 -ib 16 -ia 1 -ds 64 -db 8 -da 1 -dwt
+       Sum program
+
+15.02: -is 64 -ib 16 -ia 1 -ds 64 -db 8 -da 1 -dwb
+       Sum program
+

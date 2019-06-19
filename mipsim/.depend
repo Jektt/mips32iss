@@ -1,0 +1,7 @@
+mipsim.o: mipsim.cpp memory.h memory_accessible.h cache.h processor.h \
+ commands.h
+commands.o: commands.cpp memory.h memory_accessible.h processor.h \
+ commands.h
+memory.o: memory.cpp memory.h memory_accessible.h
+cache.o: cache.cpp cache.h memory_accessible.h
+processor.o: processor.cpp processor.h memory_accessible.h

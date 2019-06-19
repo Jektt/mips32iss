@@ -1,0 +1,707 @@
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20000004
+Instruction cache: miss, set = 0
+Memory: 20000008
+Instruction cache: miss, set = 0
+Memory: 2000000c
+Instruction cache: miss, set = 1
+Memory: 20000010
+Instruction cache: miss, set = 1
+Memory: 20000014
+Instruction cache: miss, set = 1
+Memory: 20000018
+Instruction cache: miss, set = 1
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: miss, set = 1
+Memory: 20000010
+Instruction cache: miss, set = 1
+Memory: 20000014
+Instruction cache: miss, set = 1
+Memory: 20000018
+Instruction cache: miss, set = 1
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: miss, set = 1
+Memory: 20000010
+Instruction cache: miss, set = 1
+Memory: 20000014
+Instruction cache: miss, set = 1
+Memory: 20000018
+Instruction cache: miss, set = 1
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: miss, set = 1
+Memory: 20000010
+Instruction cache: miss, set = 1
+Memory: 20000014
+Instruction cache: miss, set = 1
+Memory: 20000018
+Instruction cache: miss, set = 1
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: miss, set = 1
+Memory: 20000010
+Instruction cache: miss, set = 1
+Memory: 20000014
+Instruction cache: miss, set = 1
+Memory: 20000018
+Instruction cache: miss, set = 1
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: miss, set = 2
+Memory: 20000020
+Instruction cache: miss, set = 2
+Memory: 20000024
+Instruction cache: miss, set = 2
+Memory: 20000028
+Instruction cache: miss, set = 2
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: miss, set = 3
+Memory: 20000030
+Instruction cache: miss, set = 3
+Memory: 20000034
+Instruction cache: miss, set = 3
+Memory: 20000038
+Instruction cache: miss, set = 3
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000030
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000034
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000038
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000030
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000034
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000038
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000030
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000034
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000038
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 2000003c
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000004
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 20000008
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 20000004 20000008 2000000c
+Memory: 2000000c
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000010
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000014
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 20000018
+Instruction cache: hit, set = 1, entry = 0:
+    20000010 20000014 20000018 2000001c
+Memory: 2000001c
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000020
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000024
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 20000028
+Instruction cache: hit, set = 2, entry = 0:
+    20000020 20000024 20000028 2000002c
+Memory: 2000002c
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000030
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000034
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 20000038
+Instruction cache: hit, set = 3, entry = 0:
+    20000030 20000034 20000038 2000003c
+Memory: 2000003c
+Instructions executed: 16
+Instruction cache access count: 16
+Instruction cache miss rate: 0.250000

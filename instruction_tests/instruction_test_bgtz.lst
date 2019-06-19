@@ -1,0 +1,164 @@
+GAS LISTING instruction_test_bgtz.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11 0004 20080000 		addi		$t0, $zero, 0
+  12              	
+  13              		# Test branch taken, positive displacement
+  14              	
+  15 0008 3C105A5A 		lui		$s0, %hi(0x5A5A5A5A)
+  16 000c 22105A5A 		addi		$s0, $s0, %lo(0x5A5A5A5A)
+  17 0010 1E000004 		bgtz		$s0, L1_t
+  18 0014 20080001 		addi		$t0, $zero, 1
+  19 0018 20020000 		TEST_FAIL
+  19      00000008 
+  19      00000000 
+  20 0024 3C030000 	L1_t:	TEST_EXPECT	$t0, 1
+  20      20630001 
+  20      15030041 
+  20      00000000 
+  21              	
+  22              		# Test branch not taken, positive displacement
+  23              	
+  24 0034 3C10A5A6 		lui		$s0, %hi(0xA5A5A5A5)
+  25 0038 2210A5A5 		addi		$s0, $s0, %lo(0xA5A5A5A5)
+  26 003c 1E000003 		bgtz		$s0, L2_t
+GAS LISTING instruction_test_bgtz.s 			page 2
+
+
+  27 0040 20080002 		addi		$t0, $zero, 2
+  28 0044 08000016 		j		L2
+  29 0048 00000000 		nop
+  30              	L2_t:	
+  31 004c 20020000 		TEST_FAIL
+  31      00000008 
+  31      00000000 
+  32 0058 3C030000 	L2:	TEST_EXPECT	$t0, 2
+  32      20630002 
+  32      15030034 
+  32      00000000 
+  33              		
+  34 0068 1C000003 		bgtz		$zero, L3_t
+  35 006c 20080003 		addi		$t0, $zero, 3
+  36 0070 08000021 		j		L3
+  37 0074 00000000 		nop
+  38              	L3_t:	
+  39 0078 20020000 		TEST_FAIL
+  39      00000008 
+  39      00000000 
+  40 0084 3C030000 	L3:	TEST_EXPECT	$t0, 3
+  40      20630003 
+  40      15030029 
+  40      00000000 
+  41              		
+  42              		# Test branch taken, negative displacement
+  43              	
+  44 0094 0800002D 		j		L4
+  45 0098 00000000 		nop
+  46 009c 3C030000 	L4_t:	TEST_EXPECT	$t0, 4
+  46      20630004 
+  46      15030023 
+  46      00000000 
+  47 00ac 08000034 		j		L4_e
+  48 00b0 00000000 		nop
+  49 00b4 3C105A5A 	L4:	lui		$s0, %hi(0x5A5A5A5A)
+  50 00b8 22105A5A 		addi		$s0, $s0, %lo(0x5A5A5A5A)
+  51 00bc 1E00FFF7 		bgtz		$s0, L4_t
+  52 00c0 20080004 		addi		$t0, $zero, 4
+  53 00c4 20020000 		TEST_FAIL
+  53      00000008 
+  53      00000000 
+  54              	L4_e:	
+  55              	
+  56              		# Test branch not taken, negative displacement
+  57              	
+  58 00d0 08000039 		j		L5
+  59 00d4 00000000 		nop
+  60              	L5_t:
+  61 00d8 20020000 		TEST_FAIL
+  61      00000008 
+  61      00000000 
+  62 00e4 3C10A5A6 	L5:	lui		$s0, %hi(0xA5A5A5A5)
+  63 00e8 2210A5A5 		addi		$s0, $s0, %lo(0xA5A5A5A5)
+  64 00ec 1E00FFFA 		bgtz		$s0, L5_t
+  65 00f0 20080005 		addi		$t0, $zero, 5
+  66 00f4 3C030000 		TEST_EXPECT	$t0, 5
+GAS LISTING instruction_test_bgtz.s 			page 3
+
+
+  66      20630005 
+  66      1503000D 
+  66      00000000 
+  67              	
+  68 0104 08000046 		j		L6
+  69 0108 00000000 		nop
+  70              	L6_t:
+  71 010c 20020000 		TEST_FAIL
+  71      00000008 
+  71      00000000 
+  72 0118 1C00FFFC 	L6:	bgtz		$zero, L6_t
+  73 011c 20080006 		addi		$t0, $zero, 6
+  74 0120 3C030000 		TEST_EXPECT	$t0, 6
+  74      20630006 
+  74      15030002 
+  74      00000000 
+  75              		
+  76 0130 20020001 		TEST_END
+  76      00000008 
+  76      00000000 
+  77              		
+GAS LISTING instruction_test_bgtz.s 			page 4
+
+
+DEFINED SYMBOLS
+instruction_test_bgtz.s:7      .text:0000000000000000 __start
+instruction_test_bgtz.s:20     .text:0000000000000024 L1_t
+instruction_test_bgtz.s:76     .text:0000000000000134 _test_finish
+instruction_test_bgtz.s:30     .text:000000000000004c L2_t
+instruction_test_bgtz.s:32     .text:0000000000000058 L2
+instruction_test_bgtz.s:38     .text:0000000000000078 L3_t
+instruction_test_bgtz.s:40     .text:0000000000000084 L3
+instruction_test_bgtz.s:49     .text:00000000000000b4 L4
+instruction_test_bgtz.s:46     .text:000000000000009c L4_t
+instruction_test_bgtz.s:54     .text:00000000000000d0 L4_e
+instruction_test_bgtz.s:62     .text:00000000000000e4 L5
+instruction_test_bgtz.s:60     .text:00000000000000d8 L5_t
+instruction_test_bgtz.s:72     .text:0000000000000118 L6
+instruction_test_bgtz.s:70     .text:000000000000010c L6_t
+
+NO UNDEFINED SYMBOLS

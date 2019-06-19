@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in cache_test_*.sh; do
+  echo "**** Running ${i%.sh} *****"
+  ./$i > ${i%.sh}${MIPSIM_FLAGS// /}.log
+done
+

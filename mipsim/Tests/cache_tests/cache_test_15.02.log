@@ -1,0 +1,62 @@
+Breakpoint reached at 00000030
+00000000
+0000000a
+00000037
+00000024
+Instruction cache: hit, set = 0, entry = 0:
+    20020000 08000008 20030000 00422020
+Memory: 20020000
+Instruction cache: hit, set = 1, entry = 0:
+    00842020 8c850040 00651820 20420001
+Memory: 00842020
+Instruction cache: hit, set = 2, entry = 0:
+    2846000a 14c0fff9 00000000 ac030068
+Memory: 2846000a
+Instruction cache: miss, set = 3
+Memory: 1000ffff
+Instruction cache: miss, set = 4
+Memory: 00000001
+Instruction cache: miss, set = 5
+Memory: 00000005
+Instruction cache: miss, set = 6
+Memory: 00000009
+Data cache: miss, set = 0
+Memory: 20020000
+Data cache: miss, set = 1
+Memory: 20030000
+Data cache: miss, set = 2
+Memory: 00842020
+Data cache: miss, set = 3
+Memory: 00651820
+Data cache: miss, set = 4
+Memory: 2846000a
+Data cache: miss, set = 5
+Memory: 00000000
+Data cache: miss, set = 6
+Memory: 1000ffff
+Data cache: miss, set = 7
+Memory: 00000000
+Data cache: hit, set = 8, entry = 0:
+    00000001 00000002
+Memory: 00000001
+Data cache: hit, set = 9, entry = 0:
+    00000003 00000004
+Memory: 00000003
+Data cache: hit, set = a, entry = 0:
+    00000005 00000006
+Memory: 00000005
+Data cache: hit, set = b, entry = 0:
+    00000007 00000008
+Memory: 00000007
+Data cache: hit, set = c, entry = 0:
+    00000009 0000000a
+Memory: 00000009
+Data cache: hit, set = d, entry = 0, dirty:
+    00000037 00000000
+Memory: 00000000
+Instructions executed: 87
+Instruction cache access count: 87
+Instruction cache miss rate: 0.034483
+Data cache access count: 11
+Data cache miss rate: 0.545455
+Data cache dirty on replacement rate: 0.000000

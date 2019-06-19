@@ -1,0 +1,110 @@
+200 bytes loaded, start address = 00400090
+Breakpoint set at 00000000
+Memory read word: address = 00400090, data = 20020000
+Fetch: pc = 00400090, ir = 20020000
+addi: rt = 2, rs = 0, imm = 00000000
+Memory read word: address = 00400094, data = 20100000
+Fetch: pc = 00400094, ir = 20100000
+addi: rt = 16, rs = 0, imm = 00000000
+Memory read word: address = 00400098, data = 0c10002b
+Fetch: pc = 00400098, ir = 0c10002b
+jal: addr = 0010002b
+Memory read word: address = 0040009c, data = 20100001
+Fetch: pc = 0040009c, ir = 20100001
+addi: rt = 16, rs = 0, imm = 00000001
+Memory read word: address = 004000ac, data = 3c030040
+Fetch: pc = 004000ac, ir = 3c030040
+lui: rt = 3, imm = 00000040
+Memory read word: address = 004000b0, data = 206300a0
+Fetch: pc = 004000b0, ir = 206300a0
+addi: rt = 3, rs = 3, imm = 000000a0
+Memory read word: address = 004000b4, data = 17e30013
+Fetch: pc = 004000b4, ir = 17e30013
+bne: rs = 31, rt = 3, imm = 00000013
+Memory read word: address = 004000b8, data = 00000000
+Fetch: pc = 004000b8, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004000bc, data = 3c030000
+Fetch: pc = 004000bc, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 004000c0, data = 20630001
+Fetch: pc = 004000c0, ir = 20630001
+addi: rt = 3, rs = 3, imm = 00000001
+Memory read word: address = 004000c4, data = 1603000f
+Fetch: pc = 004000c4, ir = 1603000f
+bne: rs = 16, rt = 3, imm = 0000000f
+Memory read word: address = 004000c8, data = 00000000
+Fetch: pc = 004000c8, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004000cc, data = 0c100043
+Fetch: pc = 004000cc, ir = 0c100043
+jal: addr = 00100043
+Memory read word: address = 004000d0, data = 20100002
+Fetch: pc = 004000d0, ir = 20100002
+addi: rt = 16, rs = 0, imm = 00000002
+Memory read word: address = 0040010c, data = 3c030040
+Fetch: pc = 0040010c, ir = 3c030040
+lui: rt = 3, imm = 00000040
+Memory read word: address = 00400110, data = 206300d4
+Fetch: pc = 00400110, ir = 206300d4
+addi: rt = 3, rs = 3, imm = 000000d4
+Memory read word: address = 00400114, data = 17e3fffb
+Fetch: pc = 00400114, ir = 17e3fffb
+bne: rs = 31, rt = 3, imm = fffffffb
+Memory read word: address = 00400118, data = 00000000
+Fetch: pc = 00400118, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 0040011c, data = 3c030000
+Fetch: pc = 0040011c, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 00400120, data = 20630002
+Fetch: pc = 00400120, ir = 20630002
+addi: rt = 3, rs = 3, imm = 00000002
+Memory read word: address = 00400124, data = 1603fff7
+Fetch: pc = 00400124, ir = 1603fff7
+bne: rs = 16, rt = 3, imm = fffffff7
+Memory read word: address = 00400128, data = 00000000
+Fetch: pc = 00400128, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 0040012c, data = 0c100038
+Fetch: pc = 0040012c, ir = 0c100038
+jal: addr = 00100038
+Memory read word: address = 00400130, data = 20100003
+Fetch: pc = 00400130, ir = 20100003
+addi: rt = 16, rs = 0, imm = 00000003
+Memory read word: address = 004000e0, data = 3c030040
+Fetch: pc = 004000e0, ir = 3c030040
+lui: rt = 3, imm = 00000040
+Memory read word: address = 004000e4, data = 20630134
+Fetch: pc = 004000e4, ir = 20630134
+addi: rt = 3, rs = 3, imm = 00000134
+Memory read word: address = 004000e8, data = 17e30006
+Fetch: pc = 004000e8, ir = 17e30006
+bne: rs = 31, rt = 3, imm = 00000006
+Memory read word: address = 004000ec, data = 00000000
+Fetch: pc = 004000ec, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 004000f0, data = 3c030000
+Fetch: pc = 004000f0, ir = 3c030000
+lui: rt = 3, imm = 00000000
+Memory read word: address = 004000f4, data = 20630003
+Fetch: pc = 004000f4, ir = 20630003
+addi: rt = 3, rs = 3, imm = 00000003
+Memory read word: address = 004000f8, data = 16030002
+Fetch: pc = 004000f8, ir = 16030002
+bne: rs = 16, rt = 3, imm = 00000002
+Memory read word: address = 004000fc, data = 00000000
+Fetch: pc = 004000fc, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Memory read word: address = 00400100, data = 20020001
+Fetch: pc = 00400100, ir = 20020001
+addi: rt = 2, rs = 0, imm = 00000001
+Memory read word: address = 00400104, data = 00000008
+Fetch: pc = 00400104, ir = 00000008
+jr: rs = 0
+Memory read word: address = 00400108, data = 00000000
+Fetch: pc = 00400108, ir = 00000000
+sll: rd = 0, rt = 0, sa = 0
+Breakpoint reached at 00000000
+00000001
+Instructions executed: 35

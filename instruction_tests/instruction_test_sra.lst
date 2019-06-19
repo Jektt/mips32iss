@@ -1,0 +1,119 @@
+GAS LISTING instruction_test_sra.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# Test positive value, zero shift
+  12 0004 3C085A6B 		lui		$t0, %hi(0x5A6B7C8D)
+  13 0008 21087C8D 		addi		$t0, $t0, %lo(0x5A6B7C8D)
+  14 000c 00084803 		sra		$t1, $t0, 0
+  15 0010 3C035A6B 		TEST_EXPECT	$t1, 0x5A6B7C8D
+  15      20637C8D 
+  15      1523002C 
+  15      00000000 
+  16              	
+  17              		# Test positive value, non-zero shift
+  18 0020 3C085A6B 		lui		$t0, %hi(0x5A6B7C8D)
+  19 0024 21087C8D 		addi		$t0, $t0, %lo(0x5A6B7C8D)
+  20 0028 00084903 		sra		$t1, $t0, 4
+  21 002c 3C0305A7 		TEST_EXPECT	$t1, 0x5A6B7C8
+  21      2063B7C8 
+  21      15230025 
+  21      00000000 
+  22              	
+  23              		# Test positive value, non-zero shift
+  24 003c 3C085A6B 		lui		$t0, %hi(0x5A6B7C8D)
+  25 0040 21087C8D 		addi		$t0, $t0, %lo(0x5A6B7C8D)
+GAS LISTING instruction_test_sra.s 			page 2
+
+
+  26 0044 00084C03 		sra		$t1, $t0, 16
+  27 0048 3C030000 		TEST_EXPECT	$t1, 0x00005A6B
+  27      20635A6B 
+  27      1523001E 
+  27      00000000 
+  28              	
+  29              		# Test negative value, zero shift
+  30 0058 3C08A5B7 		lui		$t0, %hi(0xA5B6C7D8)
+  31 005c 2108C7D8 		addi		$t0, $t0, %lo(0xA5B6C7D8)
+  32 0060 00084803 		sra		$t1, $t0, 0
+  33 0064 3C03A5B7 		TEST_EXPECT	$t1, 0xA5B6C7D8
+  33      2063C7D8 
+  33      15230017 
+  33      00000000 
+  34              	
+  35              		# Test negative value, non-zero shift
+  36 0074 3C08A5B7 		lui		$t0, %hi(0xA5B6C7D8)
+  37 0078 2108C7D8 		addi		$t0, $t0, %lo(0xA5B6C7D8)
+  38 007c 00084903 		sra		$t1, $t0, 4
+  39 0080 3C03FA5B 		TEST_EXPECT	$t1, 0xFA5B6C7D
+  39      20636C7D 
+  39      15230010 
+  39      00000000 
+  40              	
+  41              		# Test negative value, non-zero shift
+  42 0090 3C08A5B7 		lui		$t0, %hi(0xA5B6C7D8)
+  43 0094 2108C7D8 		addi		$t0, $t0, %lo(0xA5B6C7D8)
+  44 0098 00084C03 		sra		$t1, $t0, 16
+  45 009c 3C030000 		TEST_EXPECT	$t1, 0xFFFFA5B6
+  45      2063A5B6 
+  45      15230009 
+  45      00000000 
+  46              	
+  47              		# ################################################################
+  48              	
+  49              		# Test with $zero as destination
+  50 00ac 3C08A5B7 		lui		$t0, %hi(0xA5B6C7D8)
+  51 00b0 2108C7D8 		addi		$t0, $t0, %lo(0xA5B6C7D8)
+  52 00b4 00080503 		sra		$zero, $t0, 20
+  53 00b8 3C030000 		TEST_EXPECT	$zero, 0x00000000
+  53      20630000 
+  53      14030002 
+  53      00000000 
+  54              		
+  55              	
+  56 00c8 20020001 		TEST_END
+  56      00000008 
+  56      00000000 
+GAS LISTING instruction_test_sra.s 			page 3
+
+
+DEFINED SYMBOLS
+instruction_test_sra.s:7      .text:0000000000000000 __start
+instruction_test_sra.s:56     .text:00000000000000cc _test_finish
+
+NO UNDEFINED SYMBOLS

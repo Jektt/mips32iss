@@ -1,0 +1,238 @@
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: miss, set = 0
+Memory: 20002000
+Instruction cache: miss, set = 0
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: miss, set = 0
+Memory: 20002000
+Instruction cache: miss, set = 0
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: miss, set = 0
+Memory: 20002000
+Instruction cache: miss, set = 0
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: miss, set = 0
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: hit, set = 0, entry = 0:
+    20004000 00000000 00000000 00000000
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: hit, set = 0, entry = 0:
+    20004000 00000000 00000000 00000000
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: hit, set = 0, entry = 0:
+    20004000 00000000 00000000 00000000
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: miss, set = 0
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: hit, set = 0, entry = 0:
+    20004000 00000000 00000000 00000000
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: hit, set = 0, entry = 1:
+    20005000 00000000 00000000 00000000
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: hit, set = 0, entry = 1:
+    20005000 00000000 00000000 00000000
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: hit, set = 0, entry = 1:
+    20005000 00000000 00000000 00000000
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: hit, set = 0, entry = 1:
+    20005000 00000000 00000000 00000000
+Memory: 20005000
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000
+Memory: 20000000
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: hit, set = 0, entry = 2:
+    20002000 00000000 00000000 00000000
+Memory: 20002000
+Instruction cache: hit, set = 0, entry = 3:
+    20003000 00000000 00000000 00000000
+Memory: 20003000
+Instruction cache: miss, set = 0
+Memory: 20004000
+Instruction cache: miss, set = 0
+Memory: 20005000
+Instructions executed: 14
+Instruction cache access count: 14
+Instruction cache miss rate: 0.571429
+memory access count: 8
+CPU cycle count: 14
+Stall cycles accessing memory: 344
+Average CPI (ideal): 1.000000
+Average CPI (actual): 25.571429

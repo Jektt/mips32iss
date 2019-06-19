@@ -1,0 +1,103 @@
+GAS LISTING instruction_test_j.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11 0004 20100000 		addi		$s0, $zero, 0
+  12              	
+  13              		# Forward jump
+  14              		
+  15 0008 08000007 	L1:	j		L1_t
+  16 000c 20100001 		addi		$s0, $zero, 1
+  17 0010 20020000 		TEST_FAIL
+  17      00000008 
+  17      00000000 
+  18 001c 3C030000 	L1_t:	TEST_EXPECT	$s0, 1
+  18      20630001 
+  18      1603000B 
+  18      00000000 
+  19              	
+  20              		# Jump over target for backward jump
+  21              	
+  22 002c 08000017 	L2:	j		L2_t
+  23 0030 20100002 		addi		$s0, $zero, 2
+  24 0034 20020000 		TEST_FAIL
+  24      00000008 
+  24      00000000 
+GAS LISTING instruction_test_j.s 			page 2
+
+
+  25              	
+  26              		# Target for backward jump
+  27              	
+  28 0040 3C030000 	L3_t:	TEST_EXPECT	$s0, 3
+  28      20630003 
+  28      16030002 
+  28      00000000 
+  29              		
+  30 0050 20020001 		TEST_END
+  30      00000008 
+  30      00000000 
+  31              	
+  32              		# Target for forward jump
+  33              	
+  34 005c 3C030000 	L2_t:	TEST_EXPECT	$s0, 2
+  34      20630002 
+  34      1603FFFB 
+  34      00000000 
+  35              	
+  36              		# Backward jump
+  37              	
+  38 006c 08000010 	L3:	j		L3_t
+  39 0070 20100003 		addi		$s0, $zero, 3
+  40 0074 20020000 		TEST_FAIL
+  40      00000008 
+  40      00000000 
+GAS LISTING instruction_test_j.s 			page 3
+
+
+DEFINED SYMBOLS
+instruction_test_j.s:7      .text:0000000000000000 __start
+instruction_test_j.s:15     .text:0000000000000008 L1
+instruction_test_j.s:18     .text:000000000000001c L1_t
+instruction_test_j.s:30     .text:0000000000000054 _test_finish
+instruction_test_j.s:22     .text:000000000000002c L2
+instruction_test_j.s:34     .text:000000000000005c L2_t
+instruction_test_j.s:28     .text:0000000000000040 L3_t
+instruction_test_j.s:38     .text:000000000000006c L3
+
+NO UNDEFINED SYMBOLS

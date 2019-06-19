@@ -1,0 +1,98 @@
+Data cache: miss, set = 0
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f001000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f004000
+Data cache: miss, set = 0
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 0:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f001000
+Data cache: miss, set = 0
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: hit, set = 0, entry = 0:
+    8f004000 00000000 00000000 00000000
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+8f005000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 0, entry = 1:
+    8f005000 00000000 00000000 00000000
+Memory: 8f005000
+8f000000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: miss, set = 0
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: hit, set = 0, entry = 1:
+    8f005000 00000000 00000000 00000000
+Memory: 8f005000
+8f001000
+Data cache: hit, set = 0, entry = 0:
+    8f000000 00000000 00000000 00000000
+Memory: 8f000000
+Data cache: hit, set = 0, entry = 1:
+    8f001000 00000000 00000000 00000000
+Memory: 8f001000
+Data cache: miss, set = 0
+Memory: 8f004000
+Data cache: miss, set = 0
+Memory: 8f005000
+Instructions executed: 8
+Data cache access count: 8
+Data cache miss rate: 0.750000

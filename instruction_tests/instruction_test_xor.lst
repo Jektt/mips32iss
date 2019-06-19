@@ -1,0 +1,124 @@
+GAS LISTING instruction_test_xor.s 			page 1
+
+
+   1              		.include "test_defines.h"
+   1              		.set noreorder
+   2              	
+   3              		.macro  TEST_INIT
+   4              		addi	$v0, $0, 0
+   5              		.endm
+   6              	
+   7              		.macro  TEST_EXPECT _r, _v
+   8              		lui	$v1, %hi(\_v)
+   9              		addi	$v1, $v1, %lo(\_v)
+  10              		bne	\_r, $v1, _test_finish
+  11              	        nop
+  12              		.endm
+  13              	
+  14              	        .macro  TEST_FAIL
+  15              		addi	$v0, $0, 0
+  16              		jr	$0
+  17              	        nop
+  18              		.endm
+  19              	
+  20              		.macro  TEST_END
+  21              		addi	$v0, $0, 1
+  22              	_test_finish:
+  23              		jr	$0
+  24              	        nop
+  25              		.endm
+  26              	
+   2              	
+   3              		.text
+   4              		.align	2
+   5              		
+   6              		.globl	__start
+   7              	__start:
+   8              	
+   9 0000 20020000 		TEST_INIT
+  10              	
+  11              		# Test zero value
+  12              		
+  13 0004 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  14 0008 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  15 000c 01005026 		xor		$t2, $t0, $zero
+  16 0010 3C035A5A 		TEST_EXPECT	$t2, 0x5A5A5A5A
+  16      20635A5A 
+  16      15430032 
+  16      00000000 
+  17              	
+  18 0020 3C08A5A6 		lui		$t0, %hi(0xA5A5A5A5)
+  19 0024 2108A5A5 		addi		$t0, $t0, %lo(0xA5A5A5A5)
+  20 0028 01005026 		xor		$t2, $t0, $zero
+  21 002c 3C03A5A6 		TEST_EXPECT	$t2, 0xA5A5A5A5
+  21      2063A5A5 
+  21      1543002B 
+  21      00000000 
+  22              	
+  23 003c 3C095A5A 		lui		$t1, %hi(0x5A5A5A5A)
+  24 0040 21295A5A 		addi		$t1, $t1, %lo(0x5A5A5A5A)
+  25 0044 00095026 		xor		$t2, $zero, $t1
+GAS LISTING instruction_test_xor.s 			page 2
+
+
+  26 0048 3C035A5A 		TEST_EXPECT	$t2, 0x5A5A5A5A
+  26      20635A5A 
+  26      15430024 
+  26      00000000 
+  27              	
+  28 0058 3C09A5A6 		lui		$t1, %hi(0xA5A5A55A)
+  29 005c 2129A5A5 		addi		$t1, $t1, %lo(0xA5A5A5A5)
+  30 0060 00095026 		xor		$t2, $zero, $t1
+  31 0064 3C03A5A6 		TEST_EXPECT	$t2, 0xA5A5A5A5
+  31      2063A5A5 
+  31      1543001D 
+  31      00000000 
+  32              	
+  33              		# Test non-zero values
+  34              		
+  35 0074 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  36 0078 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  37 007c 3C090F10 		lui		$t1, %hi(0x0F0FF0F0)
+  38 0080 2129F0F0 		addi		$t1, $t1, %lo(0x0F0FF0F0)
+  39 0084 01095026 		xor		$t2, $t0, $t1
+  40 0088 3C035556 		TEST_EXPECT	$t2, 0x5555AAAA
+  40      2063AAAA 
+  40      15430014 
+  40      00000000 
+  41              	
+  42 0098 3C08A5A6 		lui		$t0, %hi(0xA5A5A5A5)
+  43 009c 2108A5A5 		addi		$t0, $t0, %lo(0xA5A5A5A5)
+  44 00a0 3C090F10 		lui		$t1, %hi(0x0F0FF0F0)
+  45 00a4 2129F0F0 		addi		$t1, $t1, %lo(0x0F0FF0F0)
+  46 00a8 01095026 		xor		$t2, $t0, $t1
+  47 00ac 3C03AAAA 		TEST_EXPECT	$t2, 0xAAAA5555
+  47      20635555 
+  47      1543000B 
+  47      00000000 
+  48              	
+  49              		# ################################################################
+  50              	
+  51              		# Test with $zero as destination
+  52              		
+  53 00bc 3C085A5A 		lui		$t0, %hi(0x5A5A5A5A)
+  54 00c0 21085A5A 		addi		$t0, $t0, %lo(0x5A5A5A5A)
+  55 00c4 3C090F10 		lui		$t1, %hi(0x0F0FF0F0)
+  56 00c8 2129F0F0 		addi		$t1, $t1, %lo(0x0F0FF0F0)
+  57 00cc 01090026 		xor		$zero, $t0, $t1
+  58 00d0 3C030000 		TEST_EXPECT	$zero, 0x00000000
+  58      20630000 
+  58      14030002 
+  58      00000000 
+  59              		
+  60              	
+  61 00e0 20020001 		TEST_END
+  61      00000008 
+  61      00000000 
+GAS LISTING instruction_test_xor.s 			page 3
+
+
+DEFINED SYMBOLS
+instruction_test_xor.s:7      .text:0000000000000000 __start
+instruction_test_xor.s:61     .text:00000000000000e4 _test_finish
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,95 @@
+Icache: size = 1KB, block size = 64, associativity = 2
+Memory: address access cycles = 11, word access cycles = 8
+Instruction cache: tag_mask = fffffe00, set index mask = 000001c0, offset mask = 0000003f, read only
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, miss
+Instruction cache: miss, set = 0
+Memory: 20000000
+CPU: probe instruction address = 00001000
+Instruction cache: probe address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, miss
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: read word address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, miss
+Instruction cache: Replacing entry 0
+Memory read block: address = 00000000, 16 words
+Fetch: pc = 00000000, ir = 20000000
+addi: rt = 0, rs = 0, imm = 00000000
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20000000
+CPU: probe instruction address = 00001000
+Instruction cache: probe address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, miss
+Instruction cache: miss, set = 0
+Memory: 20001000
+Instruction cache: read word address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, miss
+Instruction cache: Replacing entry 1
+Memory read block: address = 00001000, 16 words
+Fetch: pc = 00001000, ir = 20001000
+addi: rt = 0, rs = 0, imm = 00001000
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20000000
+CPU: probe instruction address = 00001000
+Instruction cache: probe address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, hit, entry = 1
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: read word address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Fetch: pc = 00000000, ir = 20000000
+addi: rt = 0, rs = 0, imm = 00000000
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20000000
+CPU: probe instruction address = 00001000
+Instruction cache: probe address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, hit, entry = 1
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20001000
+Instruction cache: read word address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, hit, entry = 1
+Fetch: pc = 00001000, ir = 20001000
+addi: rt = 0, rs = 0, imm = 00001000
+CPU: probe instruction address = 00000000
+Instruction cache: probe address = 00000000
+Instruction cache: lookup address = 00000000: tag = 0, set = 0, offset = 0, hit, entry = 0
+Instruction cache: hit, set = 0, entry = 0:
+    20000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20000000
+CPU: probe instruction address = 00001000
+Instruction cache: probe address = 00001000
+Instruction cache: lookup address = 00001000: tag = 8, set = 0, offset = 0, hit, entry = 1
+Instruction cache: hit, set = 0, entry = 1:
+    20001000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+    00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Memory: 20001000
+Instructions executed: 4
+Instruction cache access count: 4
+Instruction cache miss rate: 0.500000
+memory access count: 2
+CPU cycle count: 4
+Stall cycles accessing memory: 278
+Average CPI (ideal): 1.000000
+Average CPI (actual): 70.500000
